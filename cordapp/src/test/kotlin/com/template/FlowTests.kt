@@ -17,7 +17,7 @@ class FlowTests {
         a = network.createNode()
         b = network.createNode()
         listOf(a, b).forEach {
-            it.registerInitiatedFlow(Responder::class.java)
+            it.registerInitiatedFlow(IOUFlow::class.java)
         }
         network.runNetwork()
     }
